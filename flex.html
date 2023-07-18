@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .box {
+            background-color: gray;
+            padding: 15px;
+            border-radius: 15px;
+        }
+        .container-2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 0 auto;
+        }
+        .item {
+            width: 200px;
+            height: 100px;
+            background-color: cyan;
+            border: 1px solid red;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexible Flex</h2>
+    <div class="container">
+        <div class="box">
+            <h3>Box - 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dignissimos maxime veritatis deleniti, impedit provident esse cum dolor beatae dolorem dolore earum! Sapiente, at libero ipsum odit voluptatum amet explicabo!</p>
+        </div>
+        <div class="box">
+            <h3>Box - 2</h3>
+            <p>Praesentium molestiae voluptatem sunt odio dicta porro. Laboriosam fugiat eos reprehenderit et! Eum ipsum illo animi amet beatae, fugiat numquam tempora doloremque cupiditate ullam eius dolore quas perferendis non recusandae.</p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="item">Item - 1</div>
+        <div class="item">Item - 2</div>
+        <div class="item">Item - 3</div>
+        <div class="item">Item - 4</div>
+        <div class="item">Item - 5</div>
+        <div class="item">Item - 6</div>
+        <div class="item">Item - 7</div>
+        <div class="item">Item - 8</div>
+        <div class="item">Item - 9</div>
+        <div class="item">Item - 10</div>
+    </div>
+</body>
+</html>
